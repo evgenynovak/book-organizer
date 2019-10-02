@@ -1,0 +1,1 @@
+console.log('Содержание test02.js');
