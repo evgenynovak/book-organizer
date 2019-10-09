@@ -2,13 +2,38 @@
 <html>
     <head>
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
       <link rel='stylesheet' href='style.css'>
       <title>Книжный органайзер</title>
     </head>
     <body>
-      <div>
-      тест...
-      </div>
+        <main class="app">
+            <header class="app__header" >
+                <h1 class="app__h1">Книжный органайзер</h1>
+            </header>
+
+            <ul class="book-list app__block">
+                <li class="book-list__item">
+                    <label class="book-list__title">JavaScript. Подробное руководство</label>
+                    <label class="book-list__teg teg">Найти</label>
+                    <button class="book-list__button book-list__button_edit">Изменить</button>
+                    <button class="book-list__button book-list__button_delete">Удалить</button>
+                </li>
+            </ul>
+
+            <form id="book-form" class="book-form app__block">
+                <input class="book-form__add" type="text">
+
+                <input class="book-form__radio-input" id="find" type="radio" name="find" value="Найти">
+                <label for="find" class="book-form__label teg">Найти</label>
+                
+
+                <input type="radio" name="read" value="Читать">
+
+                <button id="book-form__button book-form__button_add" type="submit">Добавить</button>
+            </form>
+        </main>
+
       <script type="text/javascript" src="bundle.js"></script>
     </body>
 </html>

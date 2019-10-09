@@ -1,10 +1,24 @@
+//colors
+$color: #1397D4;
+$bg-color: #fafafa;
+$bg-dark-color: #757575;
+$border-default: black;
 
-$bg-color: rgb(19, 151, 212);
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+* {font-family: 'Roboto', 'Open Sans', sans-serif;}
 
 body {
- background: $bg-color;
+ background-color: $bg-color;
 }
 
-div {
-  color: white;
-}
+@import "app";
+@import "book-list";

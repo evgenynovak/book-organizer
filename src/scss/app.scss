@@ -1,0 +1,17 @@
+
+.app {
+  background: #fff;
+  width: 800px;
+  margin: 50px auto;
+  border-radius: 5px;
+  &__header {
+    background-color: $color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__h1 {
+    display: inline-block;
+    color: white;
+    margin: 10px auto;
+  }
+}
