@@ -1,0 +1,21 @@
+.book-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 1px solid $border-default;
+  padding-bottom: 15px;
+  &__block {
+    display: flex;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+  }
+  &__add {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  &__button {
+    flex-grow: 0;
+  }
+}

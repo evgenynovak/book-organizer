@@ -22,15 +22,18 @@
             </ul>
 
             <form id="book-form" class="book-form app__block">
-                <input class="book-form__add" type="text">
+                <div class="book-form__block">
+                  <input class="book-form__add" type="text">
+                  <button id="book-form__button book-form__button_add" type="submit">Добавить</button>
+               </div>
+                <div class="book-form__block">
+                  <span class="book-form__text">Теги: </span>
+                  <input class="book-form__radio-input" id="find" type="radio" name="find" value="Найти">
+                  <label for="find" class="book-form__label teg">Найти</label>
+                  <input class="book-form__radio-input" id="read" type="radio" name="read" value="Читать">
+                  <label for="read" class="book-form__label teg">Читать</label>
+                </div>
 
-                <input class="book-form__radio-input" id="find" type="radio" name="find" value="Найти">
-                <label for="find" class="book-form__label teg">Найти</label>
-                
-
-                <input type="radio" name="read" value="Читать">
-
-                <button id="book-form__button book-form__button_add" type="submit">Добавить</button>
             </form>
         </main>
 
