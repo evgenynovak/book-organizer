@@ -9,6 +9,9 @@
   border: 1px solid $border-default;
   background-color: #fff;
   padding: 15px;
+  &:hover .book-list__button {
+    display: block;
+    }
   }
   &__title {
     flex-grow: 1;
@@ -19,8 +22,5 @@
     margin-bottom: -2px;
     margin-left: 5px;
     margin-right: 5px;
-  }
-  &:hover .book-list__button {
-    display: block;
   }
 }
