@@ -9,12 +9,24 @@
   border: 1px solid $border-default;
   background-color: #fff;
   padding: 15px;
+  &_edit .book-list__title{
+    display:none;
+  }
+  &_edit .book-list__title-input{
+    display:block;
+  }
   &:hover .book-list__button {
     display: block;
     }
   }
   &__title {
+    display: block;
     flex-grow: 1;
+  }
+  &__title-input {
+    display: none;
+    flex-grow: 1;
+    margin-right: 20px;
   }
   &__button {
     display: none;
