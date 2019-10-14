@@ -40,6 +40,9 @@ function createListItem(bookName, tags){
   bookListTitle.innerText = bookName;
   bookListTitle.className = 'book-list__title';
 
+  const bookListTitleInput = document.createElement('input');
+  bookListTitleInput.className = 'book-list__title-input';
+
   const buttonEdit =  document.createElement('button');
   buttonEdit.innerText = 'Изменить';
   buttonEdit.className = 'book-list__button book-list__button_edit';
