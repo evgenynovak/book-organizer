@@ -20,6 +20,8 @@ function getTeg(allTegs) {
   return bookTegs
 };
 
+
+
 function addBookListItem(event){
   event.preventDefault();
   const bookListItem = createListItem(bookFormAdd.value, getTeg(bookFormRadioInputs));
@@ -55,9 +57,22 @@ function createListItem(bookName, tags){
   ListItem.appendChild(tags);
   ListItem.appendChild(buttonEdit);
   ListItem.appendChild(buttonDelete);
-  
+
+  buttonEdit.addEventListener('click', editBookItem);
+  buttonDelete.addEventListener('click', deleteBookItem);
+
   return ListItem;
 };
+
+function editBookItem(){
+  console.log('editBookItem');
+};
+
+function deleteBookItem(){
+  console.log('deleteBookItem');
+};
+
+
 
 
 bookForm.addEventListener('submit', addBookListItem);
