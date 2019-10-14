@@ -84,7 +84,7 @@ function editBookItem(){
 };
 
 function deleteBookItem(){
-  console.log('deleteBookItem');
+  bookList.removeChild(this.parentNode);
 };
 
 
