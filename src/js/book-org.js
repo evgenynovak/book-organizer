@@ -54,6 +54,7 @@ function createListItem(bookName, tags){
   buttonDelete.className = ' book-list__button book-list__button_delete';
 
   ListItem.appendChild(bookListTitle);
+  ListItem.appendChild(bookListTitleInput);
   ListItem.appendChild(tags);
   ListItem.appendChild(buttonEdit);
   ListItem.appendChild(buttonDelete);
@@ -65,7 +66,21 @@ function createListItem(bookName, tags){
 };
 
 function editBookItem(){
-  console.log('editBookItem');
+  bookItem =  this.parentNode;
+  title = bookItem.querySelector('.book-list__title');
+  titleInput = bookItem.querySelector('.book-list__title-input');
+  isEdit = bookItem.classList.contains('book-list__item_edit');
+
+  if ( isEdit ) {
+    title.innerText = titleInput.value;
+    this.innerText = 'Изменить';
+    } else {
+    titleInput.value = title.innerText;
+    this.innerText = 'Сохранить';
+    };
+
+    bookItem.classList.toggle('book-list__item_edit');
+
 };
 
 function deleteBookItem(){
