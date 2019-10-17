@@ -14,6 +14,7 @@
 
             <ul class="book-list app__block">
                 <li class="book-list__item">
+                  <div class="book-list__block">
                     <label class="book-list__title">JavaScript. Подробное руководство</label>
                     <input  class="book-list__title-input" type="text" value=''>
                     <span class="book-list__tegs">
@@ -21,6 +22,10 @@
                     </span>
                     <button class="book-list__button book-list__button_edit">Изменить</button>
                     <button class="book-list__button book-list__button_delete">Удалить</button>
+                  </div>
+                  <div class="book-list__block book-list__block_hide">
+                    тест
+                  </div>
                 </li>
             </ul>
 
@@ -31,10 +36,14 @@
                </div>
                 <div class="book-form__block">
                   <span class="book-form__text">Теги: </span>
-                  <input class="book-form__radio-input" id="find" type="checkbox" name="find" value="Найти">
-                  <label for="find" class="book-form__label teg">Найти</label>
-                  <input class="book-form__radio-input" id="read" type="checkbox" name="read" value="Читать">
-                  <label for="read" class="book-form__label teg">Читать</label>
+                  <label class="book-form__label teg">
+                    <input class="book-form__radio-input" id="find" type="checkbox" name="find" value="Найти">
+                     Найти
+                  </label>
+                  <label class="book-form__label teg">
+                    <input class="book-form__radio-input" id="read" type="checkbox" name="read" value="Читать">
+                    Читать
+                  </label>
                 </div>
 
             </form>
